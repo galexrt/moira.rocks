@@ -8,10 +8,8 @@ metadata:
 spec:
   tls:
   - hosts:
-    - dev.moira.rocks.
-    # the secret used here is an unsigned wildcard cert for demo purposes
-    # use your own or comment this out
-    secretName: tls-wildcard-demo
+    - dev.moira.rocks
+    secretName: tls-wildcard-edenmal-net
   rules:
   - host: dev.moira.rocks
     http:
