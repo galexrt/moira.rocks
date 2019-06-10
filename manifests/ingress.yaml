@@ -1,6 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /
   name: moira-rocks-__CI_ENVIRONMENT_SLUG__
   labels:
     app: moira-rocks
