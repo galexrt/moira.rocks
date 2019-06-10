@@ -17,4 +17,4 @@ spec:
       - path: /__PATH__
         backend:
           serviceName: moira-rocks-__CI_ENVIRONMENT_SLUG__
-          servicePort: 8000
+          servicePort: 80
