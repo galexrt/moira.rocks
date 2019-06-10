@@ -8,13 +8,13 @@ metadata:
 spec:
   tls:
   - hosts:
-    - dev.moira.rocks
+    - __HOST__
     secretName: tls-wildcard-edenmal-net
   rules:
-  - host: dev.moira.rocks
+  - host: __HOST__
     http:
       paths:
-      - path: /__CI_ENVIRONMENT_SLUG__
+      - path: /__PATH__
         backend:
           serviceName: moira-rocks-__CI_ENVIRONMENT_SLUG__
           servicePort: 8000
