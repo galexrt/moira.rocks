@@ -1,4 +1,0 @@
-name: moira.rocks
-runtime: nodejs
-description: Deploying the moira.rocks application to Kubernetes.
-template:
